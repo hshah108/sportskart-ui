@@ -7,9 +7,8 @@ class Category extends Component {
         this.state = {
             isLoaded : false,
             categories : [
-                { "categoryId" : 1, "code" : "tt", "displayText" : "Table Tennis"},
-                {"categoryId" : 2, "code" : "x", "displayText" : "XX"}
-
+                { "categoryId" : 1, "code" : "x", "displayText" : "xx"},
+                { "categoryId" : 1, "code" : "x", "displayText" : "xx"}
             ]
         }
     }
@@ -41,6 +40,7 @@ class Category extends Component {
         return (
             <div>
                 <ul>
+                    <li>{this.state.categories[0].displayText}</li>
                     <li>{this.state.categories[1].displayText}</li>
                 </ul>
             </div>
