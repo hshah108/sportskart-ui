@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import Button from '@material-ui/core/Button';
 
 class Category extends Component {
 
@@ -34,15 +37,14 @@ class Category extends Component {
                 });
               });
         
-           
+            
     }
     render() {
         return (
             <div>
-                <ul>
-                    <li>{this.state.categories[0].displayText}</li>
-                    <li>{this.state.categories[1].displayText}</li>
-                </ul>
+                    {this.state.categories.map((category) => {
+                    return <Button>{category.displayText}</Button>;
+                     })}
             </div>
         );
     }

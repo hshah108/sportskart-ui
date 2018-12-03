@@ -3,7 +3,8 @@ import './App.css';
 import Person from './Person/Person';
 import {DropdownButton, MenuItem} from 'react-bootstrap';
 import Category from './Category/Category';
-//import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button';
+import Toolbar from './components/Navigation/Toolbar/Toolbar';
 
 class App extends Component {
    state = {
@@ -22,11 +23,10 @@ class App extends Component {
     return (
       <div className="App">
       
-    <Category></Category>
+    <Toolbar></Toolbar>
       </div>
       
-    );
-       
+    );   
   }
 }
 
